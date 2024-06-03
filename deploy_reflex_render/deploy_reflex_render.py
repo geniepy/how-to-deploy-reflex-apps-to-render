@@ -37,11 +37,3 @@ def index() -> rx.Component:
 
 app = rx.App()
 app.add_page(index)
-
-
-# Get the port from the environment variable or fall back to 3000
-port = int(os.environ.get("PORT", 3000))
-
-# Set the port for the app to run on
-app.compile()
-app.run(port=port)
